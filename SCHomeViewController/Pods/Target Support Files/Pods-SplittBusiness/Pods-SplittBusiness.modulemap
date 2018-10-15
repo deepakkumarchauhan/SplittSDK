@@ -1,0 +1,6 @@
+framework module Pods_SplittBusiness {
+  umbrella header "Pods-SplittBusiness-umbrella.h"
+
+  export *
+  module * { export * }
+}
