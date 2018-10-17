@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint SplittSDK.podspec' to ensure this is a
+#  Be sure to run `pod spec lint SplittFramework.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "SplittSDK"
+  s.name         = "SplittFramework"
   s.version      = "0.0.1"
   s.summary      = "By using this framework any user can give survey. Anyone can add this framework into any iOS application."
 
@@ -24,10 +24,11 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "You can integrate this framework to any iOS application for survey. Users can give survey about the application."
+  s.description  = <<-DESC
+By using this framework any user can give survey. Anyone can add this framework into any iOS application.
+                   DESC
 
-
-  s.homepage     = "https://github.com/deepakkumarchauhan/SplittSDK"
+  s.homepage     = "http://EXAMPLE/SplittFramework"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
+  s.license      = "MIT (example)"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -79,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/deepakkumarchauhan/SplittSDK.git", :tag => "#{s.version}" }
+  s.source       = { :git => "http://EXAMPLE/SplittFramework.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -116,8 +117,8 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SplittFramework"
-  # s.frameworks = "SplittFramework", "UIKit"
+  # s.framework  = "SomeFramework"
+  # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
