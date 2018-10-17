@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+By using this framework any user can give survey. Anyone can add this framework into any iOS application.
                    DESC
 
   s.homepage     = "https://github.com/deepakkumarchauhan/SplittSDKNew"
@@ -37,8 +38,8 @@ Pod::Spec.new do |s|
   #  CocoaPods will detect a license file if there is a named LICENSE*
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
+    s.license = { :type => "MIT", :file => "LICENSE" }
 
-  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -90,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "SplittBusiness/**/*.{swift}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -105,7 +106,8 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  # s.resources = "SplittBusiness/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+    s.swift_version = "4.2"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
